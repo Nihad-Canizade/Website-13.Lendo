@@ -40,20 +40,33 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Services</a></li>
+                    <li><a href="./favorite.html" target="_blank">Favorites</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="bi bi-search"></i>
+                </ul>
+                <!-- Menu Icon -->
+                <div class="menu-icon" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <button class="nav-btn">Get Free Quote</button>
+            </nav>
+            <!-- Menu icon click -->
+            <div class="res-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
                     <i class="bi bi-search"></i>
-                    <!-- Menu Icon -->
-                    <div class="menu-icon" onclick="myFunction(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
                 </ul>
                 <button class="nav-btn">Get Free Quote</button>
-            </nav>
+            </div>
         </div>
     </div>
 
@@ -64,14 +77,99 @@
             <div class="sec1-in">
                 <p class="sec1-p1">Best technology and awesome service we offer</p>
                 <p class="sec1-p2">Ullamcorper fringi tortor consec adipis elit sed do eiusmod tempor.</p>
-                <button class="sec1-btn">Check Our Services →~</button>
+                <button class="sec1-btn">Check Our Services <i class="bi bi-arrow-right"></i></button>
             </div>
         </div>
     </section>
 
 
+    <!-- Section 2 -->
+    <section class="section2">
+        <div class="container">
+            <div class="sec2-in">
+                <p class="sec2-p1">A height level service provider that recommended to any companies</p>
+                <!-- For Search and Sort Functions -->
+                <div class="search-sort">
+                    <input type="search" placeholder="Search...">
+                    <select name="sort" id="sort">
+                        <option value="def">Default</option>
+                        <option value="a-z">A-Z</option>
+                        <option value="z-a">Z-A</option>
+                    </select>
+                </div>
+                <!-- Boxs -->
+                <div class="sec2-boxs"></div>
+                <!-- Add Button -->
+                <a href="./add.html" target="_blank"><button class="add-btn">ADD</button></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section 3 -->
+    <section class="section3">
+        <div class="sec3-in">
+            <div class="sec3-forbox">
+                <p class="sec3-p1">We Have All Your Needs, From Micro Macro Planning</p>
+                <p class="sec3-p2">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have
+                    suffered alteration in some form, by injected humour, or randomised words which don’t look even
+                    slightly believable.
+                    <br><br>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words.
+                </p>
+                <button class="sec3-btn">Learn More <i class="bi bi-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section 4 -->
+    <section class="section4">
+        <div class="container">
+            <div class="sec4-in">
+                <div class="sec4-fortext">
+                    <p class="sec4-p1">We Are Largest Independent Manufacturing Company</p>
+                    <p class="sec4-p2">There are many variations of passages of Lorem Ipsum available, but the majority
+                        have suffered alteration in some form, by injected humour, or randomised words which don’t look
+                        even slightly believable.</p>
+                    <div class="sec4-forpoints">
+                        <div class="point">
+                            <p class="point-p1">450 +</p>
+                            <p class="point-p2">Successfully completed projects</p>
+                        </div>
+                        <div class="point">
+                            <p class="point-p1">860</p>
+                            <p class="point-p2">Highly specialised employees</p>
+                        </div>
+                    </div>
+                    <button class="sec4-btn">Learn More <i class="bi bi-arrow-right"></i></button>
+                </div>
+                <div class="sec4-forimg">
+                    <img src="./assets/images/s4-img.webp" alt="Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <footer>
+                <p class="footer-p1">Copyright ©2024 All rights reserved | This template is made with
+                    <i class="bi bi-heart-fill"></i> by <span>Colorlib</span>
+                </p>
+            </footer>
+        </div>
+    </div>
+
+
+
     <!-- Script -->
     <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 
 </html>

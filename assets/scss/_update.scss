@@ -1,0 +1,80 @@
+/* Section */
+.section-update {
+    width: 100%;
+    min-height: 100vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    .update-h1 {
+        color: white;
+        font-size: 40px;
+        letter-spacing: 5px;
+        text-shadow: 0px 0px 12px white;
+    }
+
+
+    form {
+        width: 400px;
+        padding: 30px 10px;
+        margin-top: 3rem;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+
+
+        .id-img {
+            width: 100px;
+            height: auto;
+            margin: 8px 7px;
+        }
+
+        label {
+            margin: 10px 0px 3px 10px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .form-img {
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        .form-name {
+            margin-top: 2px;
+            margin-left: 10px;
+            padding: 5px 20px 5px 8px;
+            width: 90%;
+            border: 1px solid rgb(160, 160, 160);
+        }
+
+        #submit {
+            margin-top: 1rem;
+            margin-left: 10px;
+            width: 90%;
+            padding: 10px;
+            background-color: rgb(83, 83, 255);
+            border: 1px solid rgb(83, 83, 255);
+            font-size: 16px;
+            font-weight: 400;
+            color: white;
+
+            &:hover {
+                cursor: pointer;
+                background-color: rgb(76, 76, 250);
+                border: 1px solid rgb(76, 76, 250);
+            }
+
+            &:active {
+                background-color: rgb(53, 53, 252);
+                border: 1px solid rgb(53, 53, 252);
+            }
+        }
+    }
+}

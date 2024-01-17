@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Favorites</title>
+    <style>
+        .section2 {
+            min-height: 100vh;
+            background-color: brown;
+        }
+
+        .section2 .sec2-in {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section2 .sec2-in .sec2-boxs {
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .rmv-fav-btn {
+            border: none;
+            background-color: red;
+            color: white;
+            padding: 3px 8px;
+        }
+
+        .rmv-fav-btn:hover {
+            cursor: pointer;
+            background-color: rgb(173, 0, 0);
+            transition: .3s;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Section 2 -->
+    <section class="section2">
+        <div class="container">
+            <div class="sec2-in">
+                <h1>Favorites</h1>
+                <!-- Boxs -->
+                <div class="sec2-boxs"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/favorites.js"></script>
+</body>
+
+</html>

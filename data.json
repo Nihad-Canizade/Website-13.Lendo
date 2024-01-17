@@ -1,0 +1,37 @@
+{
+  "boxs": [
+    {
+      "id": 1,
+      "image": "https://preview.colorlib.com/theme/lendo/assets/img/icon/services1.svg",
+      "name": "One Power and Energ",
+      "price": 100
+    },
+    {
+      "id": 2,
+      "image": "https://preview.colorlib.com/theme/lendo/assets/img/icon/services2.svg",
+      "name": "Two Power and Energ",
+      "price": 120
+    },
+    {
+      "id": 3,
+      "image": "https://preview.colorlib.com/theme/lendo/assets/img/icon/services3.svg",
+      "name": "Three Power and Energ",
+      "price": 150
+    },
+    {
+      "id": 4,
+      "image": "https://preview.colorlib.com/theme/lendo/assets/img/icon/services4.svg",
+      "name": "Four Power and Energ",
+      "price": 170
+    }
+  ],
+  "favorites": [],
+  "basket": [
+    {
+      "id": 1,
+      "image": "https://preview.colorlib.com/theme/lendo/assets/img/icon/services1.svg",
+      "name": "One Power and Energ",
+      "price": 100
+    }
+  ]
+}

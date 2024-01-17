@@ -1,0 +1,59 @@
+.sectionb {
+    width: 100%;
+    min-height: 100vh;
+
+    .secb-in {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .secb-boxs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 3rem;
+            gap: 20px;
+
+            .secb-h1 {
+                span {
+                    color: red;
+                }
+            }
+
+            .secb-box {
+                width: 95%;
+                padding: 10px 20px;
+                border-radius: 5px;
+                background-color: orange;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .secb-box-p1 {
+                    color: black;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+
+                .secb-box-p2 {
+                    color: red;
+                    font-size: 17px;
+                    font-weight: 500;
+                }
+
+                i {
+                    color: rgb(0, 176, 0);
+
+                    &:hover {
+                        cursor: pointer;
+                        color: green;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+}
