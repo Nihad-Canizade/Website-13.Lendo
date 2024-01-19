@@ -1,6 +1,6 @@
 @import "./variables";
-@import "./update";
 @import "./basket";
+@import "./add";
 
 * {
     margin: 0;
@@ -115,6 +115,42 @@
 
                     &:hover::after {
                         width: 100%;
+                    }
+                }
+
+                // Dropdown 
+                .dd-1 {
+                    display: none;
+                }
+
+                &:hover {
+                    .dd-1 {
+                        display: block;
+                        position: absolute;
+                        background-color: white;
+                        margin-top: 10px;
+
+                        ul {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            flex-direction: column;
+
+                            li {
+                                width: 100%;
+
+                                a {
+                                    padding: 10px 5px;
+                                    display: block;
+                                    color: black;
+                                }
+
+                                &:hover {
+                                    background-color: gray;
+                                    transition: .3s;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -372,6 +408,12 @@
                     line-height: 1.2;
                 }
 
+                .sec2-box-p2 {
+                    color: rgb(205, 0, 0);
+                    font-weight: 700;
+                    margin: 0px 0px 15px 0px;
+                }
+
                 .sec2-box-btns {
                     display: flex;
                     justify-content: center;
@@ -396,23 +438,6 @@
                         }
                     }
                 }
-            }
-        }
-
-        // Add Button
-        .add-btn {
-            margin-top: 40px;
-            border: none;
-            background-color: rgb(20, 208, 20);
-            color: white;
-            padding: 5px 20px;
-            font-size: 20px;
-            font-weight: 500;
-
-            &:hover {
-                cursor: pointer;
-                background-color: rgb(8, 164, 8);
-                transition: .3s;
             }
         }
     }

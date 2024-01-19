@@ -62,21 +62,21 @@ function getDataJson() {
                 </div>
                 <img src="${element.image}" alt="Image">
                 <p class="sec2-box-p1">${element.name}</p>
+                <p class="sec2-box-p2">$${element.price}.00</p>
                 <div class="sec2-box-btns">
                     <a href = "./basket.html?id=${element.id}" target = "_blank" 
                     onclick = "addBasket(${element.id})"><button>Basket</button></a>
                     <a href = "./details.html?id=${element.id}" target = "_blank"><button>View</button></a>
-                    <a href = "./update.html?id=${element.id}" target = "_blank"><button>Update</button></a>
                 </div>
             </div>`
             });
 
             // Sort Function
             sort.addEventListener('change', (e) => {
-                if (e.target.value == 'a-z') {
-                    info = info.sort((a, b) => a.name.localeCompare(b.name));
-                } else if (e.target.value == 'z-a') {
-                    info = info.sort((a, b) => b.name.localeCompare(a.name));
+                if (e.target.value == 'descending') {
+                    info = info.sort((a, b) => b.price - a.price);
+                } else if (e.target.value == 'ascending') {
+                    info = info.sort((a, b) => a.price - b.price);
                 } else {
                     info = [];
                 }
@@ -86,7 +86,7 @@ function getDataJson() {
             // Search Function
             search.addEventListener("input", (e) => {
                 let filter = data.filter((el) => {
-                    return el.name.startsWith(e.target.value);
+                    return el.name.toLocaleLowerCase().startsWith(e.target.value.toLocaleLowerCase());
                 });
                 sec2Boxs.innerHTML = "";
                 filter.forEach(element => {
@@ -102,7 +102,6 @@ function getDataJson() {
                         <a href = "./basket.html?id=${element.id}" target = "_blank" 
                         onclick = "addBasket(${element.id})"><button>Basket</button></a>
                         <a href = "./details.html?id=${element.id}" target = "_blank"><button>View</button></a>
-                        <a href = "./update.html?id=${element.id}" target = "_blank"><button>Update</button></a>
                     </div>
                 </div>`
                 })

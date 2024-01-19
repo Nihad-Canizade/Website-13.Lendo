@@ -1,6 +1,7 @@
 let form = document.querySelector('form');
 let formImg = document.querySelector('.form-img');
 let formName = document.querySelector('.form-name');
+let formPrice = document.querySelector('.form-price');
 
 
 form.addEventListener("submit", (event) => {
@@ -12,6 +13,7 @@ form.addEventListener("submit", (event) => {
         obj = {
             image: e.target.result,
             name: formName.value,
+            price: formPrice.value,
         }
         axios.post(`http://localhost:3000/boxs`, obj)
             .then(res => {
