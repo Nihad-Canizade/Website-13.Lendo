@@ -4,25 +4,33 @@
       "id": 1,
       "image": "https://preview.colorlib.com/theme/lendo/assets/img/icon/services1.svg",
       "name": "One Power and Energ",
-      "price": 120
+      "price": 120,
+      "inFavorite": false,
+      "inBasket": null
     },
     {
       "id": 2,
       "image": "https://preview.colorlib.com/theme/lendo/assets/img/icon/services2.svg",
       "name": "Two Power and Energ",
-      "price": 150
+      "price": 150,
+      "inFavorite": false,
+      "inBasket": null
     },
     {
       "id": 3,
       "image": "https://preview.colorlib.com/theme/lendo/assets/img/icon/services3.svg",
       "name": "Three Power and Energ",
-      "price": 130
+      "price": 130,
+      "inFavorite": false,
+      "inBasket": null
     },
     {
       "id": 4,
       "image": "https://preview.colorlib.com/theme/lendo/assets/img/icon/services4.svg",
       "name": "Four Power and Energ",
-      "price": 170
+      "price": 170,
+      "inFavorite": false,
+      "inBasket": null
     }
   ],
   "favorites": [],

@@ -16,22 +16,27 @@ menuIcon.addEventListener('click', () => {
 
 
 
-// Navbar Scroll
+// Scroll Functions (Navbar and To top button)
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
     let navbar = document.querySelector(".navbar");
     let navBtn = document.querySelector('.nav-btn');
+    let topBtn = document.querySelector('.top-btn');
+
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         navbar.style.backgroundColor = "black";
         navbar.style.position = "fixed";
         navBtn.style.display = "none";
         navbar.style.transition = ".3s";
+        topBtn.style.display = "block";  // For to top button
     } else {
         navbar.style.backgroundColor = "";
         navbar.style.position = "";
         navBtn.style.display = "";
+        topBtn.style.display = "none";  // For to to button
     }
+
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         navbar.style.top = "0px"
     } else {
@@ -40,13 +45,21 @@ function scrollFunction() {
 }
 
 
-// Json data
+// To top button
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
+
+// Get data Api
 let sec2Boxs = document.querySelector('.sec2-boxs');
 let search = document.querySelector("input[type=search]");
 let sort = document.getElementById('sort');
 let info = [];
 
-function getDataJson() {
+function getDataApi() {
     // Fetch all
     fetch('http://localhost:3000/boxs')
         .then(response => response.json())
@@ -57,7 +70,6 @@ function getDataJson() {
                 sec2Boxs.innerHTML += `
                 <div class="sec2-box">
                 <div class="sec2-box-icons">
-                    <i class="bi bi-trash-fill" onclick = "boxDelete(${element.id})"></i>
                     <i class="bi bi-heart-fill" onclick = "addFavorite(${element.id})"></i>
                 </div>
                 <img src="${element.image}" alt="Image">
@@ -80,7 +92,7 @@ function getDataJson() {
                 } else {
                     info = [];
                 }
-                getDataJson();
+                getDataApi();
             });
 
             // Search Function
@@ -93,7 +105,6 @@ function getDataJson() {
                     sec2Boxs.innerHTML += `
                     <div class="sec2-box">
                     <div class="sec2-box-icons">
-                        <i class="bi bi-trash" onclick = "boxDelete(${element.id})"></i>
                         <i class="bi bi-heart-fill" onclick = "addFavorite(${element.id})"></i>
                     </div>
                     <img src="${element.image}" alt="Image">
@@ -108,7 +119,7 @@ function getDataJson() {
             })
         })
 }
-getDataJson();
+getDataApi();
 
 
 // Add Basket function
@@ -117,13 +128,6 @@ function addBasket(id) {
         .then(res => {
             axios.post('http://localhost:3000/basket', res.data)
         })
-}
-
-
-// Boxs delete function
-function boxDelete(id) {
-    axios.delete(`http://localhost:3000/boxs/${id}`)
-    window.location.reload();
 }
 
 

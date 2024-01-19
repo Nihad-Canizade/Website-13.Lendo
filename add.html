@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Add</title>
 </head>
@@ -12,17 +13,27 @@
 
     <!-- Section -->
     <section class="section-add">
-        <h1 class="add-h1">Page to add</h1>
+        <h1 class="add-h1">Form for Add</h1>
         <form class="add-form">
             <label>Image:</label>
             <img src="" alt="Image" class="id-img">
             <input type="file" class="form-img">
             <label>Name:</label>
-            <input type="text" class="form-name">
+            <input type="text" class="form-name" placeholder="Enter name...">
             <label>Price:</label>
-            <input type="text" class="form-price">
-            <input type="submit" id="submit">
+            <input type="text" class="form-price" placeholder="Enter price...">
+            <button id="submit">Submit</button>
         </form>
+
+        <h1 class="delete-h1">Table for Delete</h1>
+        <table>
+            <tr>
+                <th>ID:</th>
+                <th>Name:</th>
+                <th>Price:</th>
+                <th>Delete:</th>
+            </tr>
+        </table>
     </section>
 
 

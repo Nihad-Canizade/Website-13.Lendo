@@ -32,6 +32,11 @@
                 justify-content: space-between;
                 align-items: center;
 
+                img {
+                    max-height: 150px;
+                    max-width: 50px;
+                }
+
                 .secb-box-p1 {
                     color: black;
                     font-size: 18px;
